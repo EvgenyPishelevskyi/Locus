@@ -682,16 +682,16 @@ body._lock {
   display: block;
   margin: 0 auto;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: calc(30 / 20);
 }
 @media (max-width: 767px) {
   ._video__see p {
-    font-size: calc(16px + 6.8 * ((80vw -320px) / 1920));
+    font-size: calc(16px + 0 * ((80vw -320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   ._video__see p {
-    font-size: calc(16px + 4 * (100vw / 1920));
+    font-size: calc(16px + 0 * (100vw / 1920));
   }
 }
 @media (max-width: 1200.98px) {
