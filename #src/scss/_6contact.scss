@@ -1,0 +1,140 @@
+.contact {
+   padding: 0px 0px 334px 0px;
+
+   @media (max-width: $md2 +px) {
+      padding: 0px 0px 50px 0px;
+   }
+}
+
+
+.contact__container {
+   display: flex;
+   padding-right: 71px;
+   padding-left: 92px;
+
+
+   @media (max-width: $md2 +px) {
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+      flex-direction: column;
+   }
+}
+
+.contact__info {
+   flex: 0 1 27%;
+   margin-right: 65px;
+
+   @media (max-width: $md2 +px) {
+      margin: 0px 0px 0px 0px;
+      // text-align: center;
+   }
+}
+
+._info_contact__title {
+   width: 100%;
+   padding: 0px 0px 10px 0px;
+
+   @media (max-width: $md2 +px) {
+      text-align: center;
+      padding: 30px 0px 10px 0px;
+   }
+}
+
+._info_contact__descr {
+   display: block;
+   width: 92%;
+   padding: 0px 0px 160px 0px;
+   @include adaptive-font (25, 16);
+   font-weight: 500;
+   line-height: calc(38 / 25);
+   position: relative;
+
+   @media (max-width: $md2 +px) {
+      padding: 0px 0px 40px 0px;
+      text-align: center;
+      width: 100%;
+   }
+
+
+
+   &::before,
+   &::after {
+      margin: 0px 0px 15px 0px;
+      content: "";
+      position: absolute;
+      width: 136px;
+      height: 5px;
+      background-color: #58A9A5;
+      left: 0;
+
+      @media (max-width: $md2 +px) {
+         display: none;
+      }
+   }
+
+   &::before {
+      top: 112px;
+   }
+
+   &::after {
+      top: 127px;
+   }
+}
+
+.contact__form {
+   display: flex;
+   flex: 0 1 69%;
+   flex-direction: column;
+}
+
+form {
+   height: 450px;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   border: 1px solid #486958;
+
+   @media (max-width: $md2 +px) {
+      margin: 0px 20px;
+      max-width: 100%;
+   }
+}
+
+input {
+   margin: 0px 54px;
+   padding: 57px 0px 25px 0px;
+   @include adaptive-font (25, 16);
+   font-weight: 500;
+   line-height: calc(38 / 25);
+   color: #486958;
+   border-bottom: 1px solid #000000;
+}
+
+.descript {
+   display: block;
+   padding: 36px 0px 36px 0px;
+   border: none;
+   text-align: left;
+   width: 100%;
+}
+
+.button_form {
+   position: absolute;
+   right: 53px;
+   bottom: 33px;
+   padding: 21px 73px;
+
+   @media (max-width: $md2 +px) {
+   
+   }
+}
+
+.rrr {
+   width: 93%;
+   margin: 0px 0px 0px 0px;
+   position: relative;
+
+   @media (max-width: 1300px) {
+      width: 70%;
+   }
+}

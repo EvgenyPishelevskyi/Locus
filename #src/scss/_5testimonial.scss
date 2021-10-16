@@ -1,0 +1,206 @@
+.testimonial {
+   padding: 0px 0px 240px 0px;
+
+   @media (max-width: 1400px) {
+      padding: 0px 0px 120px 0px;
+   }
+
+   @media (max-width: $md2 +px) {
+      padding: 0px 0px 40px 0px;
+   }
+}
+
+.testimonial__conteiner {
+   padding-right: 71px;
+   padding-left: 93px;
+
+   @media (max-width: $md2 +px) {
+      padding: 0px 0px 0px 0px;
+   }
+}
+
+.testimonial__title {
+   text-align: center;
+
+   @media (max-width: $md2 +px) {
+      padding: 0px 0px 20px 0px;
+   }
+}
+
+.testimonial__brends {
+   padding: 20px 189px 63px 172px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   @media (max-width: 1600px) {
+      padding: 20px 0px 63px 0px;
+   }
+
+   @media (max-width: $md2 +px) {
+      display: none;
+   }
+}
+
+.testimonial__reviews {
+   display: flex;
+
+   @media (max-width: $md2 +px) {
+      flex-direction: column;
+   }
+}
+
+._reviews__pic {
+   display: block;
+   flex: 0 1 38%;
+   background-image: url('../img/testimonial/pic5.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+
+   @media (max-width: $md2 +px) {
+      display: none;
+   }
+}
+
+.devus {
+   display: none;
+
+   @media (max-width: $md2 +px) {
+      display: block;
+      text-align: center;
+      margin: 0px 0px 30px 0px;
+   }
+}
+
+._reviews__text {
+   flex: 0 1 62%;
+   padding: 32px 0px 0px 0px;
+   background-color: #CCF0E6;
+
+   @media (max-width: $md2 +px) {
+      padding: 0px 0px 0px 0px;
+      text-align: center;
+      justify-content: center;
+   }
+}
+
+._text__numbers {
+   margin-left: 20px;
+   padding: 20px 80px 97px 80px;
+   display: flex;
+
+   @media (max-width: 1400px) {
+      padding: 20px 10px 97px 10px;
+   }
+
+   @media (max-width: $md2 +px) {
+      margin: 0 auto;
+      padding: 20px 1px;
+      margin: 0px 0px 0px 0px;
+      justify-content: center;
+      position: relative;
+      left: -20px;
+   }
+}
+
+._number__item {
+   width: 21.3%;
+   margin-right: 92px;
+   opacity: 0;
+
+   @media (max-width: 1400px) {
+      margin: 0px 50px 0px 0px;
+   }
+
+   @media (max-width: $md2 +px) {
+      padding: 0px 0px 0px 0px;
+      margin: 0px 25px 0px 0px;
+   }
+
+   span {
+      display: block;
+      position: relative;
+      top: 2px;
+      left: 34px;
+      padding: 0px 0px 10px 0px;
+      @include adaptive-font (70, 16);
+      font-weight: 800;
+      line-height: calc(105 / 70);
+      color: $buttonColor;
+
+
+      @media (max-width: $md2 +px) {
+         margin: 0px 0px 20px 0px;
+         text-align: center;
+      }
+
+   }
+
+   p {
+      width: 101%;
+      position: relative;
+      ;
+      top: -25px;
+      left: 33px;
+      @include adaptive-font (30, 16);
+      font-weight: 600;
+      line-height: calc(45 / 30);
+
+      @media (max-width: $md2 +px) {
+         text-align: center;
+      }
+   }
+}
+
+._text__comment {
+   p {
+      width: 78%;
+      display: block;
+      margin: 0 auto;
+      padding: 0px 0px 39px 29px;
+      @include adaptive-font (25, 16);
+      font-weight: 500;
+      line-height: calc(38 / 25);
+
+      @media (max-width: 1400px) {
+         padding: 0px 0px 39px 0px;
+
+      }
+   }
+
+   span {
+      width: 72%;
+      display: block;
+      margin: 0 auto;
+      padding: 0px 0px 116px 0px;
+      font-size: 25px;
+      font-style: italic;
+      @include adaptive-font (25, 16);
+      font-weight: 500;
+      line-height: calc(38 / 25);
+
+      @media (max-width: $md2 +px) {
+         padding: 0px 0px 50px 0px;
+      }
+   }
+}
+
+.ira {
+   margin-right: 0px;
+   width: 204px;
+}
+
+.ret {
+   position: relative;
+   left: -23px;
+
+   @media (max-width: $md2 +px) {
+      left: 0;
+   }
+}
+
+.element-show {
+   transition: all 1s ease-out;
+   opacity: 1;
+}
