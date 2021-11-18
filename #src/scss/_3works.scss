@@ -1,29 +1,18 @@
 .works {
    padding: 0px 0px 120px 0px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 50px 0px;
    }
 }
 
 .works__container {
-   padding-right: 69px;
-   padding-left: 93px;
+   padding: 0px 69px 0px 93px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 0px 0px;
    }
 }
-
-.works__container2 {
-   padding-right: 69px;
-   padding-left: 93px;
-
-   @media (max-width: $md2 +px) {
-      padding: 0px 0px;
-   }
-}
-
 
 .works__info {
    text-align: center;
@@ -32,22 +21,22 @@
 .works__title {
    padding: 0px 0px 20px 0px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 30px 0px 0px 0px;
    }
 }
 
 .works__descr {
-   display: block;
-   margin: 0 auto;
-   width: 27%;
    padding: 0px 0px 71px 0px;
+   margin: 0 auto;
+   display: block;
+   width: 27%;
    @extend %descr;
 
-   @media (max-width: $md2 +px) {
-      text-align: center;
-      width: 100%;
+   @media (max-width: ($md2 +px)) {
       padding: 0px 10px 71px 10px;
+      width: 100%;
+      text-align: center;
    }
 }
 
@@ -55,7 +44,7 @@
    padding: 0px 0px 148px 0px;
    display: flex;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       display: flex;
       flex-direction: column;
       padding: 0px 0px 30px 0px;
@@ -64,13 +53,11 @@
 
 ._video__bg {
    flex: 0 1 77%;
-   background-image: url('..//img/works/pic1.png');
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-size: cover;
+   background-image: url('..//img/works/pic1.webp');
+   @include background-image;
    min-height: 350px;
 
-   @media (max-width: $md3 +px) {
+   @media (max-width: ($md3 +px)) {
       background-position: -200px 0px;
    }
 }
@@ -79,31 +66,31 @@
    flex: 0 1 40%;
    background-color: #CCF0E6;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       text-align: center;
    }
 
-   p {
+   .video-see__descr {
       padding: 70px 0px 41px 0px;
+      margin: 0 auto;
       width: 57%;
       display: block;
-      margin: 0 auto;
       @include adaptive-font (16, 16);
       font-weight: 500;
       line-height: calc(30 / 20);
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          margin: 0px;
          display: inline-block;
          width: 80%;
       }
    }
 
-   span {
+   .video-see__btn {
       padding: 0px 0px 89px 0px;
+      margin: 0 auto;
       width: 57%;
       display: block;
-      margin: 0 auto;
       @include adaptive-font (20, 16);
       font-weight: 700;
       line-height: calc(30 / 20);
@@ -111,7 +98,7 @@
       text-align: left;
       letter-spacing: 2.3px;
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          margin: 0px;
          display: inline-block;
          width: 80%;
@@ -123,51 +110,48 @@
 .works__mission {
    display: flex;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       flex-direction: column-reverse;
-
    }
 }
 
 ._mission__pic {
    margin-right: 146px;
 
-   @media (max-width: $md2 +px) {
-      text-align: center;
+   @media (max-width: ($md2 +px)) {
       margin: 0px 0px 0px 0px;
+      text-align: center;
    }
 }
 
 ._mission__info {
-   display: flex;
-   flex-direction: column;
+   @include column-center;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       margin: 0px 0px 50px 0px;
       text-align: center;
    }
 
-   h3 {
+   .mission-info__title {
       padding: 0px 0px 50px 0px;
       width: 58%;
       @include adaptive-font (40, 16);
       font-weight: 700;
       line-height: calc(60 / 40);
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          display: inline-block;
          width: 100%;
       }
-
    }
 
-   p {
+   .mission-info__descr {
       padding: 2px;
       width: 82%;
       @extend %descr;
       font-weight: 500;
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          display: inline-block;
          width: 100%;
       }

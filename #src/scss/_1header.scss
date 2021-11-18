@@ -5,27 +5,24 @@
       padding: 84px 0px 30px 0px;
    }
 
-   @media (max-width: $md3 +px) {
+   @media (max-width: ($md3 +px)) {
       padding: 20px 0px 20px 0px;
    }
 }
 
 .header__container {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
    padding: 0px 68px;
+   @include center-between;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 0px 0px;
       justify-content: space-evenly
    }
 }
 
 .header__logo {
-   display: flex;
-   align-items: center;
    margin: 0px 0px 0px 20px;
+   @include center;
    transition: all 0.3s ease;
    cursor: pointer;
 
@@ -33,18 +30,18 @@
       transform: rotate3d(1, 2.0, 3.0, 10deg);
    }
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       order: 1;
       flex: 0 1 30%;
    }
 }
 
-.vv {
-   @media (max-width: $md2 +px) {
+.header__btn {
+   @media (max-width:($md2 +px)) {
       order: 2;
    }
 
-   @media (max-width: $md3 +px) {
+   @media (max-width:($md3 +px)) {
       display: none;
    }
 }
@@ -62,11 +59,11 @@
    margin: 0px 0px 0px 86px;
    padding: 0px 0px 0px 0px;
 
-   @media (max-width: $md1 +px) {
+   @media (max-width:($md1 +px)) {
       margin: 0px 0px 0px 0px;
    }
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       display: none;
    }
 }
@@ -84,22 +81,21 @@
 }
 
 ._nav__link {
-   font-size: calc(16px + 9 * (100vw /1920));
-   line-height: 38px;
+   @include adaptive-font (25, 16);
+   line-height: calc(20 / 25);
    position: relative;
    transition: all 0.3s ease;
 
    &::after {
       display: block;
-      text-align: center;
-      content: "";
-      position: absolute;
       height: 6px;
       width: 0;
-
-      background-color: #FEC62D;
+      content: "";
+      position: absolute;
       right: 50%;
       left: 50%;
+      background-color: #FEC62D;
+      text-align: center;
       transform: translateX(-50%);
       transition: width 0.3s ease-out;
    }
@@ -119,11 +115,12 @@
 }
 
 .button {
+   display: inline-block;
    box-sizing: inherit;
    padding: 21px 89px;
-   font-size: #{$fontSize + 9px};
+   @include adaptive-font (25, 16);
+   line-height: calc(37.5 / 25);
    font-weight: 500;
-   line-height: 37.5px;
    color: $whiteColor;
    background-color: $buttonColor;
    border-radius: 15px;
@@ -138,23 +135,33 @@
       background-color: #FEC62D;
    }
 
+   @media (max-width: (1024px)) {
+      padding: 21px 59px;
+   }
 
-
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
+      margin: 0 auto;
       display: inline-block;
       text-align: center;
-      margin: 0 auto;
    }
 }
 
-._button__header {
-   @media (max-width: $md2 +px) {
-      display: block;
+.header-btn__link {
+   @media (max-width:($md2 +px)) {
       margin: 0px;
+      display: block;
+   }
+
+   @media (max-width:($md3 +px)) {
+      display: none;
    }
 }
 
 //Burger
+
+.burger {
+   display: block;
+}
 
 .mobile div {
    display: block;
@@ -213,8 +220,12 @@
 }
 
 .ggg {
+   display: none;
    position: relative;
-   // left: 90px;
+
+   @media (max-width:($md3 + px)) {
+      display: block;
+   }
 }
 
 .mobile nav {
@@ -239,6 +250,8 @@
 }
 
 .mobile nav.open {
+   justify-content: center;
+   align-items: center;
    background-color: #0b5257;
    width: 100vw;
    height: 100vh;

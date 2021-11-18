@@ -5,15 +5,13 @@
       padding: 0px 0px 100px 0px;
    }
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 50px 0px;
    }
-
 }
 
 .project__container {
-   padding-left: 31px;
-   padding-right: 22px;
+   padding: 0px 22px 0px 31px;
 }
 
 .project__info {
@@ -23,7 +21,7 @@
 .project__title {
    padding: 0px 0px 20px 0px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 30px 0px 0px 0px;
    }
 }
@@ -37,11 +35,11 @@
    @extend %descr;
 
 
-   @media (max-width: $md2 +px) {
-      text-align: center;
-      margin: 0%;
-      width: 100%;
+   @media (max-width: ($md1 +px)) {
       padding: 0px 0px 50px 0px;
+      margin: 0px;
+      width: 100%;
+      text-align: center;
    }
 
    &::before,
@@ -55,7 +53,7 @@
       left: 43%;
       right: 43%;
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          display: none;
       }
    }
@@ -72,27 +70,25 @@
 .project__projects {
    display: flex;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       flex-direction: column;
    }
 }
 
 ._projects__item {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
    padding: 0px 10px;
+   @include column-center;
    text-align: center;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width:( $md2 +px)) {
       margin: 0px 0px 30px 0px;
    }
 
-   a {
+   .proj-item__link {
+      padding: 0px 00px 5px 0px;
+      margin: 0 auto;
       width: 83%;
       display: block;
-      margin: 0 auto;
-      padding: 0px 00px 5px 0px;
       @include adaptive-font (40, 16);
       font-weight: 700;
       line-height: calc(60 / 40);
@@ -105,24 +101,24 @@
          color: #357c79;
       }
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          text-align: center;
          margin: 0%;
          width: 100%;
       }
    }
 
-   p {
+   .proj-item__descr {
+      padding: 0px 0px 35px 0px;
+      margin: 0 auto;
       width: 82%;
       display: block;
-      margin: 0 auto;
-      padding: 0px 0px 35px 0px;
       @include adaptive-font (20, 16);
       font-weight: 500;
       line-height: calc(30 / 20);
       text-align: left;
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          text-align: center;
          margin: 0%;
          width: 100%;
@@ -130,19 +126,10 @@
    }
 }
 
-.fro {
-   @media (max-width: $md2 +px) {
+.workspace {
+   @media (max-width: ($md2 +px)) {
+      padding: 0px 0px 35px 0px;
       display: flex;
       flex-direction: column-reverse;
-   }
-
-
-}
-
-.vaza {
-   padding: 0px 0px 35px 0px;
-
-   @media (max-width: $md2 +px) {
-      padding: 0px 0px 0px 0px;
    }
 }

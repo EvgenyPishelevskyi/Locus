@@ -1,19 +1,16 @@
 .contact {
    padding: 0px 0px 334px 0px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 50px 0px;
    }
 }
 
-
 .contact__container {
+   padding: 0px 71px 0px 92px;
    display: flex;
-   padding-right: 71px;
-   padding-left: 92px;
 
-
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 0px 0px;
       margin: 0px 0px 0px 0px;
       flex-direction: column;
@@ -24,9 +21,8 @@
    flex: 0 1 27%;
    margin-right: 65px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       margin: 0px 0px 0px 0px;
-      // text-align: center;
    }
 }
 
@@ -34,28 +30,26 @@
    width: 100%;
    padding: 0px 0px 10px 0px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       text-align: center;
       padding: 30px 0px 10px 0px;
    }
 }
 
 ._info_contact__descr {
+   padding: 0px 0px 160px 0px;
    display: block;
    width: 92%;
-   padding: 0px 0px 160px 0px;
    @include adaptive-font (25, 16);
    font-weight: 500;
    line-height: calc(38 / 25);
    position: relative;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 40px 0px;
       text-align: center;
       width: 100%;
    }
-
-
 
    &::before,
    &::after {
@@ -67,7 +61,7 @@
       background-color: #58A9A5;
       left: 0;
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          display: none;
       }
    }
@@ -82,27 +76,28 @@
 }
 
 .contact__form {
-   display: flex;
+   @include column-center;
    flex: 0 1 69%;
-   flex-direction: column;
+
+   @media (max-width:( $md2+ px)){
+      flex: 0 1 100%;
+   }
 }
 
 form {
+   @include column-center;
    height: 450px;
-   display: flex;
-   flex-direction: column;
    position: relative;
    border: 1px solid #486958;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       margin: 0px 20px;
-      max-width: 100%;
    }
 }
 
 input {
-   margin: 0px 54px;
    padding: 57px 0px 25px 0px;
+   margin: 0px 54px;
    @include adaptive-font (25, 16);
    font-weight: 500;
    line-height: calc(38 / 25);
@@ -115,26 +110,11 @@ input {
    padding: 36px 0px 36px 0px;
    border: none;
    text-align: left;
-   width: 100%;
 }
 
 .button_form {
+   padding: 21px 73px;
    position: absolute;
    right: 53px;
    bottom: 33px;
-   padding: 21px 73px;
-
-   @media (max-width: $md2 +px) {
-   
-   }
-}
-
-.rrr {
-   width: 93%;
-   margin: 0px 0px 0px 0px;
-   position: relative;
-
-   @media (max-width: 1300px) {
-      width: 70%;
-   }
 }
