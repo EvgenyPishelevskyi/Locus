@@ -1,28 +1,28 @@
 @font-face {
   font-family: "Poppins";
   font-display: swap;
-  src: url("../fonts/Regular.woff2") format("woff2"), url("../fonts/Regular.woff") format("woff");
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
   font-display: swap;
-  src: url("../fonts/Meium.woff2") format("woff2"), url("../fonts/Meium.woff") format("woff");
+  src: url("../fonts/Poppins-Meium.woff2") format("woff2"), url("../fonts/Poppins-Meium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
   font-display: swap;
-  src: url("../fonts/Bold.woff2") format("woff2"), url("../fonts/Bold.woff") format("woff");
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
   font-display: swap;
-  src: url("../fonts/Extra-Bold.woff2") format("woff2"), url("../fonts/Extra-Bold.woff") format("woff");
+  src: url("../fonts/Poppins-Extra-Bold.woff2") format("woff2"), url("../fonts/Poppins-Extra-Bold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
